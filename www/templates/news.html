@@ -1,0 +1,10 @@
+<ion-view view-title="Actualités de foot">
+  <ion-content ng-controller="FeedNewsController" ng-init="init()">
+      <div class="list">
+          <div ng-repeat="entry in entries" class="item">
+              <b>{{entry.title}}</b><br>
+              <span ng-bind-html="entry.contentSnippet"></span>
+          </div>
+      </div>
+</ion-content>
+</ion-view>

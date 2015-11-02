@@ -1,0 +1,10 @@
+<ion-view view-title="Résultats des matches">
+  <ion-content ng-controller="resultsController" ng-init="init()">
+      <div class="list">
+        <a ng-repeat="entry in entries" class="item" ng-click="browse(entry.link)">
+                <h2>{{entry.title}}</h2>
+            <span ng-bind-html="entry.contentSnippet"></span>
+        </a>
+      </div>
+  </ion-content>
+</ion-view>
